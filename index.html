@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <script src="./asset/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-section">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" name="search-city" id="search-input" placeholder="Tìm kiếm thành phố..." />
+                <span class="microphone">
+            <i class="fas fa-microphone"></i>
+            <span class="recording-icon"></span>
+                </span>
+            </div>
+            <div class="info-wrapper">
+                <p class="city-name">--</p>
+                <p class="weather-state">--</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon" />
+                <p class="temperature">--</p>
+                <br />
+                <div class="connect">
+                    <p>Cảm thấy như</p>
+                    <p class="feel-like">--</p>
+                    <p></p>
+                    <p>C</p>
+                </div>
+            </div>
+        </div>
+        <div class="additional-section">
+            <div class="row">
+                <div class="item">
+                    <div class="label">Mặc trời mọc</div>
+                    <div class="value sunrise">--</div>
+                </div>
+                <div class="item">
+                    <div class="label">Mặt trời lặn</div>
+                    <div class="value sunset">--</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="label">Độ ẩm</div>
+                    <div class="value"><span class="humidity">--</span>%</div>
+                </div>
+                <div class="item">
+                    <div class="label">Gió</div>
+                    <div class="value"><span class="wind-speed">--</span> km/h</div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="item">
+                    <div class="label">Nhiệt độ thấp nhất</div>
+                    <div class="value temp-min">--</div>
+                </div>
+                <div class="item">
+                    <div class="label">Nhiệt độ cao nhất</div>
+                    <div class="value temp-max">--</div>
+                </div>
+            </div>
+            <br />
+            <div class="connect">
+                <p>Cập nhật hôm nay lúc</p>
+                <p class="value timeupdate"></p>
+            </div>
+            <p id="date">--</p>
+        </div>
+    </div>
+    <script src="./asset/js/index.js"></script>
+</body>
+
+</html>
